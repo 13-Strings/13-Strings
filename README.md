@@ -1,4 +1,4 @@
-#  🐛 Metamorphosis 🦋
+#  最好的状态，不是你从不失误，而是你从未放弃成长。
 <!--
 **13-Strings/13-Strings** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
