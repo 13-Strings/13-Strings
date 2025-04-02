@@ -1,9 +1,459 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.2.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.2.3" pages="2">
   <diagram name="第 1 页" id="1yufTH6R9nMQoPpMNEq9">
-    <mxGraphModel>
+    <mxGraphModel dx="1543" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-242" value="损失函数设计" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="368" y="2816" width="727" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-243" value="预测输出模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="67" y="2186" width="1189" height="557" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-244" value="跨模态信息融合模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="223" y="1357" width="932" height="756" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-245" value="注意力计算组件" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="539" y="1510" width="232" height="276" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-246" value="查询向量生成&#xa;Q=MLP(H⊕G)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="zuyVC5T2DHuvWs1-DYan-245">
+          <mxGeometry x="46" y="43" width="157" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-247" value="键值对生成&#xa;K=V=边特征" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="zuyVC5T2DHuvWs1-DYan-245">
+          <mxGeometry x="51" y="171" width="147" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-248" value="多尺度特征提取模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="197" width="1602" height="1087" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-249" value="分子图特征提取" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="222" width="464" height="1037" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-250" value="知识图谱特征提取" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="524" y="222" width="1078" height="861" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-251" value="三类子图表征" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="559" y="599" width="257" height="332" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-252" value="(1) 元素级特征" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="zuyVC5T2DHuvWs1-DYan-251">
+          <mxGeometry x="54" y="43" width="166" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-253" value="(2) 成对编码" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="zuyVC5T2DHuvWs1-DYan-251">
+          <mxGeometry x="62" y="147" width="150" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-254" value="(3) 节点类型统计" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="zuyVC5T2DHuvWs1-DYan-251">
+          <mxGeometry x="46" y="251" width="182" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-255" value="相对位置编码生成" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1242" y="247" width="320" height="279" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-256" value="输入层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="1594" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-257" value="药物i SMILES" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="85" y="45" width="152" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-258" value="药物j SMILES" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="405" y="45" width="153" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-259" value="节点特征矩阵 X" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1007" y="45" width="170" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-260" value="邻接矩阵 A" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1468" y="45" width="139" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-261" value="消息传递神经网络&#xa;(MPNN/GCN)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="914" y="272" width="188" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-262" value="节点嵌入矩阵 H" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="922" y="435" width="172" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-263" value="个性化PageRank计算" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1316" y="284" width="211" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-264" value="相对位置编码&#xa;RPE(a,b,u)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1343" y="423" width="156" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-265" value="拼接嵌入&#xa;z_u = W[H_u⊕RPE]" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1239" y="726" width="204" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-266" value="子图表征生成" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1008" y="1004" width="156" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-267" value="2D分子图转换" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="151" y="284" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-268" value="关系感知图Transformer" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="191" y="435" width="231" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-269" value="原子级嵌入" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="236" y="738" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-270" value="READOUT平均池化" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="209" y="1004" width="195" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-271" value="图级表示&#xa;G_a, G_b" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="242" y="1156" width="129" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-272" value="多模态特征拼接&#xa;(H_a,H_b,G_a,G_b,RPE)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="729" y="1382" width="240" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-273" value="多头注意力机制&#xa;(MultiHeadAttention)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="902" y="1859" width="218" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-274" value="融合特征表示&#xa;(CrossModalFeature)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="905" y="2010" width="213" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-275" value="特征整合&#xa;[H_a,b⊕G_a,b⊕Attention]" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="527" y="2211" width="257" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-276" value="多层感知机&#xa;(非线性变换+正则化)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="621" y="2362" width="209" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-277" value="Sigmoid评分函数" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="719" y="2513" width="182" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-278" value="药物相互作用概率&#xa;P(DDI)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="716" y="2640" width="188" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-279" value="正样本交叉熵损失" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="633" y="2841" width="188" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-280" value="负样本交叉熵损失" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="871" y="2841" width="188" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-281" value="总损失 = 正损失 + 负损失" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="567" y="2968" width="242" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-282" value="SMILES转换" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=1;entryX=0.4;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-257" target="zuyVC5T2DHuvWs1-DYan-267">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="193" y="124" />
+              <mxPoint x="193" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-283" value="SMILES转换" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.12;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-258" target="zuyVC5T2DHuvWs1-DYan-267">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="482" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-284" value="节点特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.64;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-259" target="zuyVC5T2DHuvWs1-DYan-261">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1137" y="124" />
+              <mxPoint x="1137" y="222" />
+              <mxPoint x="1008" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-285" value="拓扑结构" style="curved=1;startArrow=none;endArrow=block;exitX=0.66;exitY=1;entryX=1;entryY=0.37;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-260" target="zuyVC5T2DHuvWs1-DYan-261">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1582" y="124" />
+              <mxPoint x="1582" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-286" value="节点信息" style="curved=1;startArrow=none;endArrow=block;exitX=0.36;exitY=1;entryX=0.32;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-259" target="zuyVC5T2DHuvWs1-DYan-263">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1048" y="124" />
+              <mxPoint x="1048" y="222" />
+              <mxPoint x="1332" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-287" value="结构信息" style="curved=1;startArrow=none;endArrow=block;exitX=0.2;exitY=1;entryX=0.57;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-260" target="zuyVC5T2DHuvWs1-DYan-263">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1457" y="124" />
+              <mxPoint x="1457" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-288" value="嵌入生成" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-261" target="zuyVC5T2DHuvWs1-DYan-262">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-289" value="位置计算" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-263" target="zuyVC5T2DHuvWs1-DYan-264">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-290" value="特征组合" style="curved=1;startArrow=none;endArrow=block;exitX=0.89;exitY=1;entryX=0.34;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-262" target="zuyVC5T2DHuvWs1-DYan-265">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1167" y="526" />
+              <mxPoint x="1167" y="563" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-291" value="位置编码" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.58;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-264" target="zuyVC5T2DHuvWs1-DYan-265">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1421" y="563" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-292" value="输入特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=1;entryX=0.41;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-262" target="zuyVC5T2DHuvWs1-DYan-266">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1054" y="526" />
+              <mxPoint x="1054" y="968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-293" value="增强特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.14;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-265" target="zuyVC5T2DHuvWs1-DYan-266">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1341" y="968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-294" value="原子与键信息" style="curved=1;startArrow=none;endArrow=block;exitX=0.67;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-267" target="zuyVC5T2DHuvWs1-DYan-268">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="306" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-295" value="关系感知计算" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-268" target="zuyVC5T2DHuvWs1-DYan-269">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-296" value="原子表示聚合" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-269" target="zuyVC5T2DHuvWs1-DYan-270">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-297" value="全局聚合" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-270" target="zuyVC5T2DHuvWs1-DYan-271">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-298" value="子图特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.59;exitY=1;entryX=1;entryY=0.06;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-266" target="zuyVC5T2DHuvWs1-DYan-272">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1113" y="1083" />
+              <mxPoint x="1113" y="1321" />
+              <mxPoint x="1073" y="1357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-299" value="分子图特征" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.97;entryX=0;entryY=0.27;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-271" target="zuyVC5T2DHuvWs1-DYan-272">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="419" y="1259" />
+              <mxPoint x="419" y="1357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-300" value="节点嵌入" style="curved=1;startArrow=none;endArrow=block;exitX=0.11;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-262" target="zuyVC5T2DHuvWs1-DYan-272">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="851" y="526" />
+              <mxPoint x="851" y="1357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-301" value="注意力计算" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-273" target="zuyVC5T2DHuvWs1-DYan-274">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-302" value="融合表示" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.2;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-274" target="zuyVC5T2DHuvWs1-DYan-275">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1011" y="2186" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-303" value="直接连接" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.31;exitY=1;entryX=1;entryY=0.32;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-266" target="zuyVC5T2DHuvWs1-DYan-275">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1027" y="1083" />
+              <mxPoint x="1027" y="1321" />
+              <mxPoint x="1236" y="1357" />
+              <mxPoint x="1236" y="2186" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-304" value="直接连接" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.23;exitY=1;entryX=0;entryY=0.28;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-271" target="zuyVC5T2DHuvWs1-DYan-275">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="1259" />
+              <mxPoint x="249" y="1321" />
+              <mxPoint x="169" y="1357" />
+              <mxPoint x="169" y="2186" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-305" value="特征输入" style="curved=1;startArrow=none;endArrow=block;exitX=0.64;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-275" target="zuyVC5T2DHuvWs1-DYan-276">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="725" y="2326" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-306" value="高阶特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.71;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-276" target="zuyVC5T2DHuvWs1-DYan-277">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="2477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-307" value="概率输出" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-277" target="zuyVC5T2DHuvWs1-DYan-278">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-308" value="正样本" style="curved=1;startArrow=none;endArrow=block;exitX=0.79;exitY=1;entryX=0.98;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-278" target="zuyVC5T2DHuvWs1-DYan-279">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="901" y="2743" />
+              <mxPoint x="901" y="2816" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-309" value="负样本" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.07;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-278" target="zuyVC5T2DHuvWs1-DYan-280">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="2816" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-310" value="损失计算" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.57;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-279" target="zuyVC5T2DHuvWs1-DYan-281">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="727" y="2932" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-311" value="损失计算" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.99;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-280" target="zuyVC5T2DHuvWs1-DYan-281">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="2932" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-312" value="模型优化" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.25;exitY=0;entryX=0.05;entryY=1;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-281" target="zuyVC5T2DHuvWs1-DYan-276">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="544" y="2932" />
+              <mxPoint x="544" y="2477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-313" value="提供特征" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.27;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-251" target="zuyVC5T2DHuvWs1-DYan-266">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="688" y="968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-314" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.15;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-272" target="zuyVC5T2DHuvWs1-DYan-245">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="849" y="1485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-315" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.71;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-245" target="zuyVC5T2DHuvWs1-DYan-273">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1011" y="1823" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-316" value="" style="curved=1;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-256" target="zuyVC5T2DHuvWs1-DYan-248">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-317" value="" style="curved=1;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-248" target="zuyVC5T2DHuvWs1-DYan-244">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-318" value="" style="curved=1;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-244" target="zuyVC5T2DHuvWs1-DYan-243">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zuyVC5T2DHuvWs1-DYan-319" value="" style="curved=1;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="1" source="zuyVC5T2DHuvWs1-DYan-243" target="zuyVC5T2DHuvWs1-DYan-242">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QObLKG1ZqKSALLHReHto" name="第 2 页">
+    <mxGraphModel dx="867" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="65TWlAwfV453biyPy-uw-27" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-28" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-27">
+          <mxGeometry width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-29" value="输入层" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-28">
+          <mxGeometry width="120" height="120" as="geometry">
+            <mxRectangle width="120" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-30" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-31" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-30">
+          <mxGeometry width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-32" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-31">
+          <mxGeometry x="40" width="80" height="120" as="geometry">
+            <mxRectangle width="80" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-33" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-34" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-33">
+          <mxGeometry width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-35" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry x="40" width="100" height="120" as="geometry">
+            <mxRectangle width="100" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-36" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry x="140" width="100" height="120" as="geometry">
+            <mxRectangle width="100" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-41" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="260" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-42" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
+          <mxGeometry width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-43" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-42">
+          <mxGeometry x="40" width="80" height="120" as="geometry">
+            <mxRectangle width="80" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-44" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
+          <mxGeometry y="120" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-45" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-44">
+          <mxGeometry x="40" width="80" height="120" as="geometry">
+            <mxRectangle width="80" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
