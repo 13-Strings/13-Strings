@@ -393,66 +393,218 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QObLKG1ZqKSALLHReHto" name="第 2 页">
-    <mxGraphModel dx="867" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="992" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="65TWlAwfV453biyPy-uw-27" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="320" width="120" height="120" as="geometry" />
+          <mxGeometry x="40" y="280" width="120" height="200" as="geometry" />
         </mxCell>
         <mxCell id="65TWlAwfV453biyPy-uw-28" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-27">
-          <mxGeometry width="120" height="120" as="geometry" />
+          <mxGeometry width="120" height="200" as="geometry" />
         </mxCell>
         <mxCell id="65TWlAwfV453biyPy-uw-29" value="输入层" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-28">
+          <mxGeometry width="120" height="200" as="geometry">
+            <mxRectangle width="120" height="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-50" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="80" as="sourcePoint" />
+            <mxPoint x="120" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-51" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="119.5" as="sourcePoint" />
+            <mxPoint x="120" y="119.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-52" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="160" as="sourcePoint" />
+            <mxPoint x="120" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-55" value="药物j&amp;nbsp; &amp;nbsp; SMILES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry x="5" y="85" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-56" value="节点特征矩阵&amp;nbsp; &amp;nbsp; X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry y="130" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-57" value="邻接矩阵&amp;nbsp; &amp;nbsp; &amp;nbsp; A" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-29">
+          <mxGeometry x="10" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-30" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-31" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-30">
+          <mxGeometry width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-32" value="输出块" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-31">
+          <mxGeometry width="120" height="160" as="geometry">
+            <mxRectangle width="120" height="160" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-63" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="65TWlAwfV453biyPy-uw-32" target="65TWlAwfV453biyPy-uw-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="75" as="sourcePoint" />
+            <mxPoint x="50" y="25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-64" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="65TWlAwfV453biyPy-uw-32" target="65TWlAwfV453biyPy-uw-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="120" as="sourcePoint" />
+            <mxPoint x="50" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="120" />
+              <mxPoint x="110" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-65" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="65TWlAwfV453biyPy-uw-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="79.5" as="sourcePoint" />
+            <mxPoint x="120" y="79.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="79.5" />
+              <mxPoint x="110" y="79.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-66" value="Attn(Q, K, V)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-32">
+          <mxGeometry x="15" y="50" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-68" value="分子图特征的拼接" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-32">
+          <mxGeometry y="130" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-33" value="多尺度特征提取" style="shape=table;childLayout=tableLayout;startSize=40;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="260" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-34" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-33">
+          <mxGeometry y="40" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-35" value="   分子图表征            子图表征" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=120;collapsible=0;recursiveResize=0;expand=0;horizontal=0;align=left;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry width="40" height="200" as="geometry">
+            <mxRectangle width="40" height="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-36" value="&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;元素级特征&#xa;&#xa;&#xa;成对编码&#xa;&#xa;&#xa;节点类型计数&#xa;&#xa;&#xa;分子原子联合表示&#xa;&#xa;&#xa;高维分子图表示&#xa;" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=120;collapsible=0;recursiveResize=0;expand=0;labelBackgroundColor=none;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry x="40" width="200" height="200" as="geometry">
+            <mxRectangle width="200" height="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-58" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="65TWlAwfV453biyPy-uw-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="160" as="sourcePoint" />
+            <mxPoint x="200" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-60" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="65TWlAwfV453biyPy-uw-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="79" as="sourcePoint" />
+            <mxPoint x="200" y="79" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-61" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="65TWlAwfV453biyPy-uw-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="40" as="sourcePoint" />
+            <mxPoint x="200" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-41" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="300" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-42" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-43" value="跨模态信息融合" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-42">
+          <mxGeometry width="120" height="40" as="geometry">
+            <mxRectangle width="120" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-44" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
+          <mxGeometry y="40" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-45" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-44">
           <mxGeometry width="120" height="120" as="geometry">
             <mxRectangle width="120" height="120" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-30" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
-          <mxGeometry x="640" y="320" width="120" height="120" as="geometry" />
+        <mxCell id="65TWlAwfV453biyPy-uw-62" value="交叉注意力" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="65TWlAwfV453biyPy-uw-45">
+          <mxGeometry y="18" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-31" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-30">
-          <mxGeometry width="120" height="120" as="geometry" />
+        <mxCell id="65TWlAwfV453biyPy-uw-53" value="药物i&amp;nbsp; &amp;nbsp; SMILES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="328" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-32" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-31">
-          <mxGeometry x="40" width="80" height="120" as="geometry">
-            <mxRectangle width="80" height="120" as="alternateBounds" />
+        <mxCell id="65TWlAwfV453biyPy-uw-67" value="节点嵌入特征的拼接" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="408" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-70" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.008;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.008;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-27" target="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-33" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
-          <mxGeometry x="200" y="320" width="240" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-34" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-33">
-          <mxGeometry width="240" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-35" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
-          <mxGeometry x="40" width="100" height="120" as="geometry">
-            <mxRectangle width="100" height="120" as="alternateBounds" />
+        <mxCell id="65TWlAwfV453biyPy-uw-71" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="65TWlAwfV453biyPy-uw-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="420" as="sourcePoint" />
+            <mxPoint x="200" y="339.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-36" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-34">
-          <mxGeometry x="140" width="100" height="120" as="geometry">
-            <mxRectangle width="100" height="120" as="alternateBounds" />
+        <mxCell id="65TWlAwfV453biyPy-uw-72" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="340" as="sourcePoint" />
+            <mxPoint x="200" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-41" value="" style="shape=table;childLayout=tableLayout;startSize=0;fillColor=none;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="260" width="120" height="240" as="geometry" />
-        </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-42" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
-          <mxGeometry width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-43" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;strokeColor=inherit;connectable=0;fillColor=none;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-42">
-          <mxGeometry x="40" width="80" height="120" as="geometry">
-            <mxRectangle width="80" height="120" as="alternateBounds" />
+        <mxCell id="65TWlAwfV453biyPy-uw-73" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="380" as="sourcePoint" />
+            <mxPoint x="200" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-44" value="" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;strokeColor=inherit;bottom=0;right=0;dropTarget=0;fontStyle=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-41">
-          <mxGeometry y="120" width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="65TWlAwfV453biyPy-uw-45" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;fontStyle=0;connectable=0;strokeColor=inherit;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;" vertex="1" parent="65TWlAwfV453biyPy-uw-44">
-          <mxGeometry x="40" width="80" height="120" as="geometry">
-            <mxRectangle width="80" height="120" as="alternateBounds" />
+        <mxCell id="65TWlAwfV453biyPy-uw-74" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.31;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="65TWlAwfV453biyPy-uw-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="480" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-75" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-33" target="65TWlAwfV453biyPy-uw-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-76" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-34" target="65TWlAwfV453biyPy-uw-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-77" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.004;exitY=0.295;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-34" target="65TWlAwfV453biyPy-uw-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-78" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.625;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-34" target="65TWlAwfV453biyPy-uw-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="510" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-79" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.025;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="65TWlAwfV453biyPy-uw-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="603" y="397.92" as="sourcePoint" />
+            <mxPoint x="640" y="379.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-82" value="药物i 和 药物j&amp;nbsp;&lt;div&gt;存在药物反应的概率 p&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="390" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="65TWlAwfV453biyPy-uw-83" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="760" y="370" width="30" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
